@@ -138,7 +138,8 @@ string Decrypt(string message)
 int main(){ 
     string msg;
     cout<<"Enter message : ";
-    cin>>msg;
+    // cin>>msg;
+    getline(cin,msg);
     string key;
     cout<<"Enter Key : ";
     cin>>key;

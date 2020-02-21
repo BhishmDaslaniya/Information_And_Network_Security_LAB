@@ -2,11 +2,10 @@
 using namespace std;
 typedef long long int ll;
 
-ll randInRange(ll low, ll high) // excluding high and low
-{
+ll randInRange(ll low, ll high){
+    // excluding high and low
     return rand()%(high-(low+1)) + (low+1) ;
 }
-
 
 // ll gcd(ll a, ll b){
 //     return b==0 ? a : gcd(b, a%b);
@@ -55,7 +54,7 @@ int main(){
 	cout<<"private key = {"<<d<<", "<<n<<"}"<<endl;
 
 	ll M ,C ,P;
-	cout<<"Enter message in decimal (M < n): ";
+	cout<<"Enter message in decimal (M < " << p*q <<"): ";
 	cin>>M;
 
 	C = encrypt(M, e, n);
