@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------------------
+What we will need?
+-------------------------------------------------------------------------------------------
+Since blockchains are meant to be decentralized and secure on a P2P network, we'll need to implement a hashing algorithm. Why hashing over other encryption methods? Hashing allows us to input any size data and always get in return a string of a determined length, thus making it very easy to work with our data since the same input will always return the same output. It is also nearly impossible to get back to an input with an output using a hash. We'll be using the SHA-256 hash for this blockchain, provided to us by the crypto-js module.
+
+npm install --save crypto-js
+
+-------------------------------------------------------------------------------------------
+For testing of this script:
+-------------------------------------------------------------------------------------------
+cd into your projrct folder and in terminal run 
+
+>node blockchain.js
+
+You will get Output hurrah!!!
+
+
+
