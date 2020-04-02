@@ -101,10 +101,10 @@ def hashFunction(message):
 def verify(receivedHashed, message):
     ourHashed = hashFunction(message)
     if receivedHashed == ourHashed:
-        print("Verification successful!", )
+        print("Digital signature verification successful!", )
         print(receivedHashed, " = ", ourHashed)
     else:
-        print("Verification failed!")
+        print("Digital signature verification failed!")
         print(receivedHashed, " != ", ourHashed)
         
 if __name__== '__main__':
@@ -122,7 +122,7 @@ if __name__== '__main__':
     
     print("Encrypting message with private key ", private ," . . .")
     encrypted_msg = encrypt(private, hashed)   
-    print("Your encrypted hashed message is: ")
+    print("Your encrypted hashed message(Digital signature) is: ")
     print(''.join(map(lambda x: str(x), encrypted_msg)))
     # print(encrypted_msg)
     
@@ -130,9 +130,9 @@ if __name__== '__main__':
     print("Decrypting message with public key ", public ," . . .")
 
     decrypted_msg = decrypt(public, encrypted_msg)
-    print("Your decrypted message is:")  
+    print("Your decrypted message(Digital signature) is:")  
     print(decrypted_msg)
     
     print("")
-    print("Verification process . . .")
+    print("Verification process of digital signature. . .")
     verify(decrypted_msg, message)
