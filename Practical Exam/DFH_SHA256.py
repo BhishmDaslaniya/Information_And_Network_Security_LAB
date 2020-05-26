@@ -17,6 +17,14 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
+"""
+					:::     References     :::
+-> https://github.com/lowazo/pyDHE/blob/master/DiffieHellman.py
+-> https://github.com/danharper/hmac-examples
+-> https://github.com/BhishmDaslaniya/Information_and_Network_Security_LAB/blob/master/Digital_Signature.py
+
+"""
+
 import hmac
 import base64
 import hashlib
